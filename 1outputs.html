@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript </title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <button onclick="alert('monish')">click1</button> <!-- inline javascript -->
+    <button onclick="myfun()">click2</button> <!-- internal javascript  -->
+    <button onclick="myfunExternal()">click3</button> <!-- External javascript -->
+
+<script>
+    function myfun(){
+       document.getElementById("demo").innerHTML = "mayuri innerHTML" 
+       console.log("mayuri log");
+       alert("mayuri")
+       document.write("mayuri write")
+    }
+    
+</script>
+<script src="function.js"></script>
+</body>
+</html>
