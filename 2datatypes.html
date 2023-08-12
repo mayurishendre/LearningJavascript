@@ -7,6 +7,8 @@
 </head>
 <body>
     <button onclick="myFun()" >Click</button>
+
+    <p id="g"></p>
     <script>
         function myFun(){
             a = 1           // number
@@ -14,10 +16,21 @@
             c = true        // boolean
             d = undefined   // undefined
             e = null        // object
-            f = ['mayuri','monish'] // object
+            f = ['mayuri','Loves','monish'] // object
             g = {"name":'mayuri','age':24} // object
 
             console.log(typeof(g)) // show data type
+            //document.write(e);  
+
+            //retriev value from array (by index)
+            //document.write(f[2]);
+
+            //retrive value from object (by key)
+            document.getElementById("g").innerHTML= "<b>"+"name:"+g["name"] +"</b>"+"</br>"+ "age:"+g["age"]
+
+
+
+
             
         }
     </script>
